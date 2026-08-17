@@ -61,7 +61,7 @@ Potential Profit = Profit × Stock
 - GitHub — Project Documentation & Version Control
 
 ## Dashboard
-
+![Spinneys Sales & Inventory Dashboard](dashboard.png)
 The Tableau dashboard provides an interactive view of product performance and inventory.
 
 ### Key KPIs
