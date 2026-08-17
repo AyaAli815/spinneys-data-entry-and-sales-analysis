@@ -70,7 +70,7 @@ The interactive Tableau dashboard analyzes product performance, inventory, profi
 
 ### Dashboard Preview
 
-![Spinneys Sales & Inventory Dashboard](Supermarket Sales & Inventory Dashboard.png)
+![Spinneys Sales & Inventory Dashboard](Dashboard.png)
 
 ### View Interactive Dashboard
 
