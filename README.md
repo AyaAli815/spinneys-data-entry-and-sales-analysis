@@ -4,11 +4,17 @@
 
 This project started as a product data entry task using product information collected from the Spinneys website.
 
-The data was entered and organized in Microsoft Excel, then prepared for analysis and transformed into an interactive Tableau dashboard to analyze product inventory, profitability, revenue potential, and promotions.
+The data was entered and organized in Microsoft Excel, then prepared for analysis and transformed into an interactive Tableau dashboard to analyze product inventory, profitability, revenue potential, profit margins, categories, and promotions.
+
+The project demonstrates an end-to-end data workflow from data entry and preparation to analysis, visualization, and business insights.
+
+---
 
 ## Data Entry
 
-The dataset contains product-level information including:
+The project began with collecting and entering product information from the Spinneys website into an Excel dataset.
+
+The dataset contains 59 products with the following information:
 
 - Product ID
 - Category
@@ -20,51 +26,59 @@ The dataset contains product-level information including:
 - Promotion
 - Stock
 
-A total of 59 products were entered and prepared for analysis.
+The data was organized and prepared in Excel before being used for further analysis.
 
-## Data Preparation
+---
 
-Additional calculated fields were created to support the analysis:
+## Data Preparation & Calculated Fields
 
-- Profit
-- Profit Margin
-- Stock Value
-- Potential Revenue
-- Potential Profit
+Additional calculated fields were created to support the analysis.
 
-### Calculations
-
-**Profit**
+### Profit
 
 Profit = Selling Price - Cost
 
-**Profit Margin**
+### Profit Margin
 
 Profit Margin = Profit / Selling Price
 
-**Stock Value**
+### Stock Value
 
 Stock Value = Cost × Stock
 
-**Potential Revenue**
+### Potential Revenue
 
 Potential Revenue = Selling Price × Stock
 
-**Potential Profit**
+### Potential Profit
 
 Potential Profit = Profit × Stock
 
+---
+
 ## Tools Used
 
-- Microsoft Excel — Data Entry & Data Preparation
-- Tableau — Data Analysis & Interactive Dashboard
-- GitHub — Project Documentation & Version Control
+- **Microsoft Excel** — Data Entry & Data Preparation
+- **Tableau Public** — Data Analysis & Interactive Visualization
+- **GitHub** — Project Documentation & Version Control
 
-## Dashboard
-![Spinneys Sales & Inventory Dashboard]
-The Tableau dashboard provides an interactive view of product performance and inventory.
+---
 
-### Key KPIs
+## Tableau Dashboard
+
+The interactive Tableau dashboard analyzes product performance, inventory, profitability, revenue potential, profit margins, categories, and promotions.
+
+### Dashboard Preview
+
+![Spinneys Sales & Inventory Dashboard](Supermarket Sales & Inventory Dashboard.png)
+
+### View Interactive Dashboard
+
+[View the Interactive Tableau Dashboard](https://public.tableau.com/app/profile/aya.ali4011/vizzes)
+
+---
+
+## Key KPIs
 
 | KPI | Value |
 |---|---:|
@@ -73,41 +87,72 @@ The Tableau dashboard provides an interactive view of product performance and in
 | Potential Revenue | EGP 161,982 |
 | Potential Profit | EGP 51,363 |
 
-### Dashboard Analysis
+---
+
+## Dashboard Analysis
 
 The dashboard includes:
 
-- Profit by Category
-- Stock Distribution
+- Product Inventory Analysis
+- Stock Distribution by Category
+- Potential Revenue by Category
+- Potential Profit by Category
 - Top 10 Products by Potential Profit
-- Products with Low / Zero Stock
+- Low / Zero Stock Products
 - Profit Margin Analysis
 - Promotion Analysis
 - Interactive Category Filter
 
-## Key Insights
+---
 
-- Frozen Food generated the highest potential profit among the categories, with approximately EGP 16.6K.
-- Bakery & Bread had the highest stock quantity at 549 units.
-- Products without promotions represented 41 products, compared with 18 promoted products.
-- The top 10 products generated approximately EGP 26.99K in potential profit.
-- Four products currently have zero stock and may require inventory attention.
-- Some products have high profit margins, while others have relatively low margins and may need pricing or promotion review.
+## Key Business Insights
+
+- **Frozen Food** generated the highest potential profit among all categories, at approximately **EGP 16.6K**.
+- **Bakery & Bread** had the highest stock quantity with **549 units**.
+- Products without promotions represented **41 products**, while **18 products** were promoted.
+- The **Top 10 Products** generated approximately **EGP 26.99K** in potential profit.
+- **Four products** currently have zero stock, indicating potential inventory replenishment opportunities.
+- Profit margins varied significantly across products, with the highest margin reaching approximately **63.5%**.
+- Total inventory represents approximately **EGP 110.6K in stock value**.
+- If all available inventory were sold at the current selling prices, it could generate approximately **EGP 162K in potential revenue**.
+
+---
 
 ## Project Files
 
-### Excel
-`Spinneys_Product_Data.xlsx`
+### Excel Dataset
 
-Contains the entered and prepared product dataset.
+`data/Spinneys_Product_Data.xlsx`
 
-### Tableau
-`Spinneys_Sales_Inventory_Dashboard.twbx`
+Contains the entered and prepared product dataset, including cost, selling price, promotion status, stock, and calculated fields.
 
-Contains the interactive Tableau dashboard.
+### Tableau Workbook
 
-## Conclusion
+`tableau/Spinneys_Sales_Inventory_Dashboard.twbx`
 
-This project demonstrates an end-to-end workflow starting from product data entry and preparation in Excel, followed by data analysis and interactive visualization in Tableau.
+Contains the interactive Tableau dashboard and visual analysis.
 
-The analysis provides insights into inventory levels, profitability, revenue potential, product margins, categories, and promotional products.
+### Dashboard Screenshot
+
+`screenshots/dashboard.png`
+
+Preview of the final Tableau dashboard.
+
+---
+
+## Project Workflow
+
+```text
+Spinneys Website
+       ↓
+Data Collection & Data Entry
+       ↓
+Microsoft Excel
+       ↓
+Data Preparation & Calculated Fields
+       ↓
+Tableau
+       ↓
+Interactive Dashboard
+       ↓
+Business Insights
